@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="car1" class="com.goSpring.IOC_Dependency_proj2.Car">
+<property name="maxspeed" value="80"/>
+</bean>
+
+<bean id="bus1" class="com.goSpring.IOC_Dependency_proj2.Bus">
+<property name="maxspeed" value="60"/>
+<property name="fueltype" value="Diesel"/>
+</bean>
+
+
+
+</beans>

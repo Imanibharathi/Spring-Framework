@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="casio" class="com.goSpring.ThrowsAdvice_Around.CasioCalculator"/>
+<bean id="throws" class="com.goSpring.ThrowsAdvice_Around.Exceptionclient"/>
+
+<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+
+<property name="proxyInterfaces" value="com.goSpring.ThrowsAdvice_Around.Calculator"/>
+
+<property name="interceptorNames">
+<list>
+<value>throws</value>
+</list>
+</property>
+
+<property name="target">
+<ref bean="casio"/>
+</property>
+
+</bean>
+</beans>

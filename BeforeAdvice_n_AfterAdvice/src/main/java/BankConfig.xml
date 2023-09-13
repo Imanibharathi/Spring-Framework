@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="id1" class="com.goSpring.BeforeAdvice_n_AfterAdvice.ICICI_Bank"/>
+<bean id="id2" class="com.goSpring.BeforeAdvice_n_AfterAdvice.MyBefore"/>
+<bean id="id3" class="com.goSpring.BeforeAdvice_n_AfterAdvice.MyAfter"/>
+<bean id="id4" class="org.springframework.aop.framework.ProxyFactoryBean">
+
+<property name="proxyInterfaces" value="com.goSpring.BeforeAdvice_n_AfterAdvice.Bank"/>
+
+<property name="interceptorNames">
+<list>
+<value>id2</value>
+<value>id3</value>
+</list>
+</property>
+
+<property name="target">
+<ref bean="id1"/>
+</property>
+
+</bean>
+</beans>

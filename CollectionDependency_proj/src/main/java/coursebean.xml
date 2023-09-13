@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="crs" class="com.goSpring.CollectionDependency_proj.Course">
+    <property name="cname" value="Java"/>
+    <property name="fees" value="35600"/>
+    <property name="concepts">
+    <set>
+    <value>OOPS</value>
+    <value>Exception handling</value>
+    <value>Type casting</value>
+    <value>Wrapper class</value>
+    <value>Variables</value>
+    <value>Datatypes</value>
+    </set>
+    </property>
+    
+    </bean>
+</beans>

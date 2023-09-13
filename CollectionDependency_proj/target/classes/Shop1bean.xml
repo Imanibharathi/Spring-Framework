@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="shop1" class="com.goSpring.CollectionDependency_proj.Shop1" >
+    <property name="sname" value="Ganesh Book Store"/>
+    <property name="customers">
+    <list>
+    <ref bean="cust1"/>
+    <ref bean="cust2"/>
+    <ref bean="cust3"/>
+    </list>
+    </property>
+    </bean>
+    <bean id="cust1" class="com.goSpring.CollectionDependency_proj.Customer">
+    <property name="id" value="101"/>
+    <property name="name" value="Mani"/>
+    <property name="phno" value="9897765678"/>
+    </bean>
+    <bean id="cust2" class="com.goSpring.CollectionDependency_proj.Customer">
+    <property name="id" value="102"/>
+    <property name="name" value="Raja"/>
+    <property name="phno" value="9897765679"/>
+    </bean>
+    <bean id="cust3" class="com.goSpring.CollectionDependency_proj.Customer">
+    <property name="id" value="103"/>
+    <property name="name" value="Magasri"/>
+    <property name="phno" value="9897765680"/>
+    </bean>
+    
+</beans>

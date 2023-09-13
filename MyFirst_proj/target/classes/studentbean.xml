@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="std1" class="com.goSpring.MyFirst_proj.Student">
+    <property name="sid" value="1"/>
+    <property name="sname" value="Mani"/>
+    <property name="sperc" value="72.25"/>
+    </bean>
+
+</beans>

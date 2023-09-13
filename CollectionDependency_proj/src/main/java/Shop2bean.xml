@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="shop2" class="com.goSpring.CollectionDependency_proj.Shop2">
+    <property name="sname" value="Saravanan Fancy Store"/>
+    <property name="customers">
+    <set>
+    <ref bean="cust1"/>
+    <ref bean="cust2"/>
+    <ref bean="cust3"/>
+    <ref bean="cust4"/>
+    </set>
+    </property>
+    </bean>
+    <bean id="cust1" class="com.goSpring.CollectionDependency_proj.Customer2">
+    <property name="id" value="101"/>
+    <property name="name" value="Mani"/>
+    <property name="mob" value="9942768993"/>
+    </bean>
+    <bean id="cust2" class="com.goSpring.CollectionDependency_proj.Customer2">
+    <property name="id" value="102"/>
+    <property name="name" value="Rakesh"/>
+    <property name="mob" value="9942768983"/>
+    </bean>
+    <bean id="cust3" class="com.goSpring.CollectionDependency_proj.Customer2">
+    <property name="id" value="103"/>
+    <property name="name" value="Jo"/>
+    <property name="mob" value="9942768963"/>
+    </bean>
+    <bean id="cust4" class="com.goSpring.CollectionDependency_proj.Customer2">
+    <property name="id" value="101"/>
+    <property name="name" value="Mani"/>
+    <property name="mob" value="9942768943"/>
+    </bean>
+    
+</beans>

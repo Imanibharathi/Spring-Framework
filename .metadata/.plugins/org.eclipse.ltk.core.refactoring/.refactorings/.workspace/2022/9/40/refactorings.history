@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;LooseCoupling_Appconfig_NOxml&apos;" deleteContents="true" description="Delete resource &apos;LooseCoupling_Appconfig_NOxml&apos;" element1="/LooseCoupling_Appconfig_NOxml" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1664299169847"/>
+</session>

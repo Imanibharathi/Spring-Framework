@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="emp1" class="com.goSpring.MyFirst_proj.Employee">
+    <property name="id" value="1"/>
+    <property name="name" value="Mani"/>
+    <property name="sal" value="85889.00"/>
+    <property name="ad" ref="add"/>
+    </bean>
+    
+    <bean id="add" class="com.goSpring.MyFirst_proj.Address">
+    <property name="city" value="BTM"/>
+    <property name="state" value="Karnataka"/>
+    <property name="country" value="India"/>
+    
+    
+    </bean>
+
+</beans>

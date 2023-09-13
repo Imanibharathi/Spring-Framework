@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="emp1" class="com.goSpring.IOC_Dependency_proj.Employee">
+    <constructor-arg value="1"/>
+    <constructor-arg value="Jo"/>
+    <constructor-arg value="85000.75"/>
+    <constructor-arg ref="add"/>
+    </bean>
+    
+    <bean id="add" class="com.goSpring.IOC_Dependency_proj.Address">
+    <constructor-arg value="Chennai"/>
+    <constructor-arg value="Tamil nadu"/>
+    <constructor-arg value="India"/>
+    
+    </bean>
+
+</beans>

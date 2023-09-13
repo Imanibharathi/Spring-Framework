@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   
+   <bean id="clg2" class="com.goSpring.CollectionDependency_proj.College_usingMap2">
+   <property name="cname" value="IRTT"/>
+   <property name="Studentsdata">
+   <map>
+   <entry key="101" value-ref="std101"/>
+   <entry key="102" value-ref="std102"/>
+   <entry key="103" value-ref="std103"/>
+   <entry key="104" value-ref="std104"/>
+   </map>
+   </property>
+   </bean>
+   <bean id="std101" class="com.goSpring.CollectionDependency_proj.Student">
+   <constructor-arg value="101"/>
+   <constructor-arg value="Mani"/>
+   <constructor-arg value="98.78"/>
+   </bean>
+   <bean id="std102" class="com.goSpring.CollectionDependency_proj.Student">
+   <constructor-arg value="102"/>
+   <constructor-arg value="Raghu"/>
+   <constructor-arg value="99.99"/>
+   </bean>
+   <bean id="std103" class="com.goSpring.CollectionDependency_proj.Student">
+   <constructor-arg value="103"/>
+   <constructor-arg value="Jo"/>
+   <constructor-arg value="98.58"/>
+   </bean>
+   <bean id="std104" class="com.goSpring.CollectionDependency_proj.Student">
+   <constructor-arg value="104"/>
+   <constructor-arg value="Rakesh"/>
+   <constructor-arg value="97.67"/>
+   </bean>
+</beans>

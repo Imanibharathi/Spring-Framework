@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   
+   <bean id="clg1" class="com.goSpring.CollectionDependency_proj.College_usingMap">
+   <property name="cname" value="IRTT"/>
+   <property name="Studentsdata">
+   <map>
+   <entry key="101" value="Mani"/>
+   <entry key="102" value="jo"/>
+   <entry key="103" value="Magasri"/>
+   <entry key="104" value="Raja"/>
+   </map>
+   </property>
+   
+   </bean>
+</beans>

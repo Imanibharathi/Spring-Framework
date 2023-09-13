@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- We can autowire the components either byName/byType/constructor/autodetect-->
+<bean id="std" class="com.goSpring.Autowiring.Student" autowire="constructor">
+<property name="sname" value="Mani"/>
+</bean>
+
+
+<bean id="cr" class="com.goSpring.Autowiring.Course">
+<property name="cname" value="Java"/>
+<property name="fees" value="37850"/>
+</bean>
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>
